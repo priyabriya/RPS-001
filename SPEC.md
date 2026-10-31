@@ -27,8 +27,7 @@ Results are from the **player’s perspective**. `determine_winner(player, compu
 
 ### Agreed plan
 
-**My prediction (fill in yourself):** I chose ______ and the computer chose ______; I expect ______ because ______.
-<!-- Example of the *kind* of reasoning wanted: "Rock vs paper: paper covers rock, so the player loses." Use your own matchup and words. -->
+**My prediction:** I chose Rock and the computer chose Paper; I expect "lose" because paper beats rock.
 
 **Scope:** `determine_winner(player, computer)` in `game.py` returns `win`, `lose`, or `tie` from the player's perspective. One independent round per click. No score, storage, accounts, new framework, or AI API. The supplied `app.py`, template, and server are kept.
 
