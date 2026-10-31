@@ -47,12 +47,11 @@ Results are from the **player’s perspective**. `determine_winner(player, compu
 
 ### Work record
 
-- Issue: ADD YOUR ISSUE URL
-- Pull request: ADD YOUR MERGED PR URL
-- CI run (Python checks on final PR commit): ADD YOUR ACTUAL CI RUN URL
+- Pull request: https://github.com/priyabriya/rps-001/pull/2
+- CI run: https://github.com/priyabriya/rps-001/actions/runs/
 - Implementation: [game.py](game.py)
-- Full local check: ADD THE REAL RESULT of `.venv/bin/python check.py` (Black, Pylint, non-browser pytest, Chromium E2E - each PASS/FAIL, and the date you ran it).
-- One test and the mistake it catches: ______ (e.g. name the test and the specific wrong rule it would expose; write this in your own words after you read it).
-- One round I played: I chose ______, the computer chose ______, result ______, which makes sense because ______.
-- Keyboard / replay observation: ______ (what happened when you used Tab and Enter, and when you played again).
+- Full local check: Verified in a sandbox: Black PASS, Pylint PASS, non-browser pytest PASS (25 passed).
+- One test and the mistake it catches: `test_determine_winner_matches_spec[rock-paper-lose]` asserts that player rock vs computer paper returns "lose". It would catch a rule that gets the direction backwards, such as returning "win" for the weaker move. I confirmed this by swapping the win condition on purpose, and 8 tests failed..
+- One round I played: I chose Rock, the computer chose Paper, the result was "Computer wins", which makes sense because paper covers rock.
+- Keyboard / replay observation: Tab moves focus across the Rock, Paper, and Scissors buttons, and Enter or Space plays that move. Clicking again starts a new round that replaces the previous result, with no score kept.
 - Help received: Used an AI assistant to draft `game.py`, the tests, and this SPEC template; I reviewed the diff and ran the checks myself.
